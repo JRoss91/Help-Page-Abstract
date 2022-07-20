@@ -47,8 +47,20 @@
     <section class="search">
         <div class="search-wrapper">
             <h1 class="hero-title">How can we help?</h1>
-            <input type="search" class="search-bar" placeholder="Search">
+            <input type="text" class="search-bar" id="search" placeholder="Search" onkeypress="handle(event)">
         </div>
+        <script>
+          
+        function handle(e){
+                search=document.getElementById("search").value;
+                if(e.keyCode === 13){
+                    //write your specific code from here
+                    alert("You are searching: " + search);
+                }
+                return false;
+            }
+            
+            </script>
     </section>
 
     <div class="info-wrapper">
