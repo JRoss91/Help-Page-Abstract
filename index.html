@@ -148,5 +148,15 @@
         </div>
     </footer>
 
+    <script class="mobile-menu">
+        const burger = document.querySelector(".burger");
+        const rightNav = document.querySelector(".right-nav");
+
+        burger.addEventListener("click", () => {
+            burger.classList.toggle("open-nav");
+            rightNav.classList.toggle("open-nav");
+        })
+    </script>
+
 </body>
 </html>
